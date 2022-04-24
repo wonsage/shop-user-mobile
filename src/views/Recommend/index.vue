@@ -1,8 +1,13 @@
 <template>
-  分类
+  <div>
+  tuijan
   <bottom-docker></bottom-docker>
+  </div>
 </template>
 
 <script setup>
-import BottomDocker from '@/components/BottomDocker.vue'
 </script>
+
+<style lang="scss" scoped>
+
+</style>

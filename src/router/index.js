@@ -13,6 +13,11 @@ const routes = [
     component: () => import('@/views/Home/index.vue')
   },
   {
+    path: '/cart',
+    name: 'cart',
+    component: () => import('@/views/Cart/index.vue')
+  },
+  {
     path: '/category',
     name: 'category',
     component: () => import('@/views/Category/index.vue')
@@ -21,6 +26,11 @@ const routes = [
     path: '/category-datail/:categoryId',
     name: 'category-detail',
     component: () => import('@/views/CategoryDetail/index.vue')
+  },
+  {
+    path: '/item',
+    name: 'item',
+    component: () => import('@/views/Item/index.vue')
   },
   {
     path: '/order',
@@ -42,6 +52,21 @@ const routes = [
     path: '/pay',
     name: 'pay',
     component: () => import('@/views/Pay/index.vue')
+  },
+  {
+    path: '/recommend',
+    name: 'recommend',
+    component: () => import('@/views/Recommend/index.vue')
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: () => import('@/views/Search/index.vue')
+  },
+  {
+    path: '/user',
+    name: 'user',
+    component: () => import('@/views/User/index.vue')
   },
   {
     path: '/:pathMatch(.*)*', // 匹配所有路径，不能单独使用 *
